@@ -1,0 +1,24 @@
+.info {
+  position: absolute;
+  top: 25rem;
+  left: 80rem;
+  width: 500px;
+  /* text-align: center; */
+  font-weight: lighter;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 100px auto;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.info h2 {
+  font-size: 28px;
+}
+
+.info ul {
+  list-style: none;
+  margin: 0 auto;
+}
