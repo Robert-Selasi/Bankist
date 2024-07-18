@@ -85,7 +85,27 @@ const account4 = {
   locale: "pt-PT", // de-DE
 };
 
-const accounts = [account1, account2, account3, account4];
+const account5 = {
+  owner: "Robert Quarshie",
+  movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
+  interestRate: 1.2, // %
+  pin: 5555,
+
+  movementsDates: [
+    "2024-07-17T21:31:17.178Z",
+    "2019-12-23T07:42:02.383Z",
+    "2020-01-28T09:15:04.904Z",
+    "2024-07-16T10:17:24.185Z",
+    "2020-05-08T14:11:59.604Z",
+    "2020-05-27T17:01:17.194Z",
+    "2020-07-11T23:36:17.929Z",
+    "2024-07-14T10:51:36.790Z",
+  ],
+  currency: "GHS",
+  locale: "en-GH", // en-GH
+};
+
+const accounts = [account1, account2, account3, account4, account5];
 
 // Elements
 const labelWelcome = document.querySelector(".welcome");
@@ -236,7 +256,7 @@ const updateUI = function (acc) {
 };
 // start logout timer function
 const startLogOutTimer = function () {
-  let time = 120;
+  let time = 300;
 
   const tick = function () {
     let min = String(Math.trunc(time / 60)).padStart(2, 0);
